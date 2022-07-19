@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #7e8185;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,60 @@
   font-size: calc(10px + 2vmin);
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.ItemTodo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #b5b8be;
+  border-style: solid;
+  border-color: b5b8be;
+}
+
+.ItemTodoInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  color: #670ec9;
+  background: #aa09d3;
+}
+
+.Discription {
+  color: #670ec9;
+  /* background: #b5b8be; */
+}
+
+.Assign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #818999;
+  border-style: solid;
+  border-color: red;
+
+}
+
+.Complete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #48546d;
+  border-style: solid;
+  border-color: red;
 }
 
 .Item input {
@@ -41,7 +94,7 @@
   border: none;
 }
 
-.Item span {
+.ItemTodo span {
   color: #fc4040;
   padding-left: 5px;
   font-size: 15px;

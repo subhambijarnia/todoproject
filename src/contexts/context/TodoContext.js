@@ -41,9 +41,8 @@ export function todoReducer(state, action) {
 }
 
 function TodoProvider(props) {
-  // const [items, setItems] = useState(initialItems);
   const [items, dispatch] = useReducer(todoReducer, initialItems);
-
+  {console.log('items======= ', items);}
   const todoData = { items, dispatch };
 
   return (
